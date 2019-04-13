@@ -1,0 +1,114 @@
+html { 
+  background: url(background-1920x1080.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+}
+
+body{
+    /*background-image: url(background-1920x1080.jpg);*/
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+    padding: 1rem;
+    height: 100%;
+
+
+}
+
+.bg { 
+  /* The image used */
+  background-image: url("img_girl.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*estilo contenedor*/
+.contenedor{
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #909090;
+    border-radius: 20px;
+    padding: 1rem;
+}
+/*estilo de la imagen e "iniciar sesion"*/
+div .iniciar-sesion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+div .iniciar-sesion img{
+    height: 100px;
+}
+div .iniciar-sesion h1{
+    color: #0eb100;
+    margin-left: 1rem;
+}
+/*estilo del formulario*/
+div .formulario{
+    margin-left: 1rem;
+}
+div .formulario span{
+    color: red;
+}
+div .formulario input{
+    width: 95%;
+    height: 30px;
+    border-radius: 1rem;;
+}
+/*estilo de volver y entrar*/
+div .enviar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+div .enviar a{
+    text-decoration: none;
+    margin: 1rem;
+}
+div .enviar .volver{
+    color: #666666;
+    background: white;
+    width: 40%;
+    height: 45px;
+    text-align: center;
+    border: 3px solid #666666;
+    border-radius: 1rem;
+    line-height: 13px;
+}
+div .enviar .entrar{
+    color: white;
+    background: #0eb100;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border-radius: 1rem;
+    line-height: 15px;
+}
+/* estilo de olvidaste tu contraseña*/
+div .olvidado p{
+    text-align: center;
+    color: blue;
+}
+@media(max-width:420px){
+    div .iniciar-sesion img{
+        height: 70px;
+    }
+}
+
+/*contrasenya_olvidada.html solo*/
+aside{
+    margin-left: 1rem;
+}

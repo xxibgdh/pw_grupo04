@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/styleradio.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../calendario/css/style-calendar.css">
+    <title>Gráfico</title>
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+    <script src="../calendario/js/jquery-3.3.1.min.js"></script>
+    <script src="../calendario/js/popper.min.js"></script>
+    <script src="../calendario/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+
+</head>
+
+<body onload="carga()">
+
+    <!-- NAVBAR -->
+    <header class="encabezado">
+        <a href="#" alt="cerrar sesion">
+            <img src="../img/logoGTI.svg" alt="logo corporativo">
+        </a>
+        <button type="button" class="boton-menu" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false" aria-controls="menu-principal"><i class="fas fa-bars"></i></button>
+        <nav id="menu-principal" class="collapse">
+            <ul>
+                <li><a onclick="redireccionParcelas()">Mapa de parcelas</a></li>
+                <li><a onclick="redireccionCalendario()">Calendario</a></li>
+                <li><a href="../login/login.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="contenido">
+
+        <canvas id="myChart" height="435px"></canvas>
+
+    </section>
+    <footer>
+        <button class="volver" onclick="volverInicio()"><i class="boton-volver fas fa-arrow-circle-left"></i></button>
+
+    </footer>
+    <script src="js/chart.js"></script>
+
+
+    <script>
+        function carga() {
+            var id = getParam("id");
+            console.log(id);
+            getMediciones(id);
+        }
+
+      
+    </script>
+
+
+</body></html>

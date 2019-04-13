@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, maximum-scale=1">
+    <meta http-equip="x-ua-compatible" content="ie-edge">
+    <link rel="stylesheet" href="style-login.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <section class="iniciar-sesion">
+            <a href="../index.html"><img src="logoGTI.svg" alt="logo"></a>
+            <h1>Iniciar sesión</h1>
+        </section>
+        <section class="formulario">
+            <form id="datos" method="post">
+                <div id="label-email">
+                    <p><span>* </span>Introduce tu email:</p>
+                </div>
+                <input type="text" id="email" placeholder="Correo eléctronico" name="email">
+                <div id="label-contra">
+                    <p><span>* </span>Introduce tu contraseña:</p>
+                </div>
+                <input type="password" id="contraseña" placeholder="Contraseña" name="contraseña">
+            </form>
+            <p>Los campos marcados con <span>*</span> son obligatorios.<br></p>
+            <div id="error"></div>
+        </section>
+        <section class="enviar">
+            <a href="#" class="volver" onclick="volver()">
+                <p>Volver</p>
+            </a>
+            <a href="#" class="entrar" onclick="validarDatos(document.getElementById('datos'))">
+                <p>Entrar</p>
+            </a>
+        </section>
+        <div class="olvidado">
+            <p>¿Ha olvidado su contraseña?</p>
+            <p>Haz <a href="contrasenya_olvidada.html">click aquí</a> para recordarla.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function volver() {
+            document.location.href = "../lp/index.html";
+        }
+
+    </script>
+    <script src="login.js"></script>
+</body>
+
+</html>

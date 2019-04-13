@@ -1,0 +1,425 @@
+<style>
+    font-family: 'Open Sans', sans-serif; font-size: 14px;
+/*
+:root{
+    --texto:white;
+    --fondo-texto: rgb(51,102,0);
+}
+*/
+
+
+/*Vamos a centrar el contenido y a alinearlo*/
+
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.logoGTI{ /* Logo principal de la empresa */
+    
+    margin-top: 0;
+    height: 90px;
+    top:-20px;
+    padding: 0;
+    
+    
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.main_article{ /* con esto conseguimos que el logo y el título se alinee y se centre, así como se haga columna */
+     display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+body{ /* imágen fija y color predeterminado del texto blanco */
+        
+        background-image: url(background.jpeg);
+
+        background-repeat: no-repeat;
+        background-size: 100% 100% ;
+        overflow: hidden; /* para que no haga scroll el texto */
+        color:white;
+    }
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+html {
+    height: 100%
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+footer  { /*Pie de página fijado y alineado*/
+ 
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  
+} 
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+footer img { /*definimos como van el tamaño de los logos */
+    
+    width: 27px;
+    height: 27px;
+    border-bottom: 0.1rem;
+}
+/* Lo que respecta al pie de página, está fijado siempre en la parte inferior, el texto y los logos siempre están al medio y completamente alineados, el color de letra es el blanco y de altura tiene 40px*/
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.titulo{ /*Queremos que el título esté centrado, tenga fondo con opacidad y con sus items alineados, también que crezca y decrezca*/
+    background-color: rgb(51,102,0,0.9);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    width: 100%;
+    margin-top: 0;
+    
+    
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.titulo h1{ /*titulo*/
+    margin-top: 0;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.titulo p{ /*Párrafo que acompaña al título*/
+    margin-top: 0;
+    font-size: 1.7rem;
+    margin-bottom: 0px;
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.main-button{ /*botón de comenzar*/
+
+    flex: 1 1 0px;
+  align-items: center;
+  justify-content: center;
+    color: rgb(51,102,0);
+    
+    
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.main-button a { /*enlace del botón*/
+      background-color: white;
+        border-radius: 30px;
+        padding: 0.4rem;
+        border: 0.3rem solid #336633;
+        text-decoration: none;
+        color: #336633;
+    
+       
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.info{
+    margin-top: 2rem;
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.info div{ /*padre de la información */
+
+    display: flex;
+    flex-direction: row; /* me interesa que TODO sea una fila*/
+    width: 75%; /* me interesa que ocupe solamente un X % de la pantalla */
+   
+    margin: 0 auto; /* nos centra el div en medio de la pagina */
+    align-content:flex-end; /* de esta forma se pega abajo */
+   
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.info p { /* los párrafos de nuestra información que acompañan a los titulos y los logos */
+          
+      align-items: stretch; /* me fastidiaba que los cuadros no eran iguales y con esto logro que los párrafos siempre se igualen */
+      font-size: 20px; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0;
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+#main_texto{  /* separación del botón */
+    margin-bottom: 3rem;
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.info article { /* los artículos que constituyen nuestra info */
+    
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    background-color: rgb(51,102,0,0.8);
+    flex: 1 1 0px;
+    justify-content: center;
+    
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.info h2{ /* titulo de info */
+    
+    text-align: center; /* El título símplemente lo centramos y ya estaría */
+    font-size: 20px;
+    
+   
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+section article div img{ /* logos de nuestra info */
+    display: block; /* Primero la tratamos como un bloque */
+    margin: 0; /* Luego le damos un margen automático y se nos centra */
+    
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+section article div{ /*OJO, ESTO ACTÚA DENTRO DEL DIV DEL ARTÍCULO NO ES == A .INFO DIV*/
+     border: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    /* alinea los 2 elementos */
+    justify-content: center; /* esto centra el contenido */
+   
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+#logo_movil{
+    
+    margin-right:0.7rem; /* estaba demasiado pegada a la letra */
+}
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.main-button a {
+    
+    
+    display: block;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+/*-----------------*/
+/*RESPONSIVE MEDIAS*/
+/*-----------------*/
+@media (max-width:1359px){ /*vamos ajustando el ancho;*/
+    .info div{
+        width: 80%;
+    }
+    }
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+@media (max-width:1209px){ /*vamos ajustando el ancho;*/
+    .info div{
+        width: 85%;
+    }
+    .titulo p {
+        font-size: 1.8rem;
+    }
+    }
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+@media (max-width:1080px){ /*vamos ajustando el ancho;*/
+    .info div{
+        width: 90%;
+    }
+    }
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+@media (max-width:1000px){ /*vamos ajustando el ancho;*/
+    .info div{
+        width: 95%;
+    }
+    
+    .titulo p{
+        font-size: 1.6rem;
+    }
+    }
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+@media (max-width:900px){ /*vamos ajustando el ancho y fuentes*/
+    .info div{
+        width: 100%;
+    }
+    .titulo h1{
+        font-size: 3rem;
+    }
+    .titulo p{
+        font-size: 1.4rem;
+    }
+    }
+
+    .logoGTI{
+        height: 80px;
+    }
+
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+@media (max-width:805px){ /*vamos ajustando el ancho, lo hacemos columna y ajustamos fuentes, también retocamos padding*/
+  
+    .logoGTI{
+        height: 60px;
+    }
+    .info div{
+    
+     flex-direction: column;
+        margin: 0 0 0;
+    }
+     .info div article div{
+     display: flex;
+     flex-direction: row;
+    
+    }
+     .titulo h1{
+            font-size: 2.5rem;
+        }
+        .titulo p{
+            font-size: 1rem;
+        }
+    .info p{
+       padding-left: 2rem;
+        font-size: 1rem;
+        text-align: left;
+        
+    }
+    .info h2{
+        font-size: 18px;
+    }
+    .titulo{
+        margin-bottom: 1rem;
+    }
+    .info article{
+        background-color: rgba(51,102,0,0.6);
+        color: rgba(255,255,255,1);
+    }
+    #main_texto{ /* separación del botón */
+    margin-bottom: 2rem;
+        }
+    
+    /*-------------------------------------------------*/
+    /*-------------------------------------------------*/
+    /*-------------------------------------------------*/
+    
+    @media (max-width:600px){ /*separar el titulo de el info, arreglar el footer, separar el botón comenzar y cambiar tamaños*/
+        
+        .info p {
+            display: none;
+        }
+        .info article div{
+            text-align: left;
+           justify-content: flex-start;
+            align-content: flex-start;
+           
+        }
+        .titulo{
+            background-color: rgba(51,102,0,0.8);
+            
+            text-align: left;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-bottom: 1.5rem;    
+        }
+        .tituloh1{
+            font-size:  2.2rem;
+            
+        }
+        
+        
+        footer{
+            font-size: 0.8rem;
+        }
+       
+        /*-------------------------------------------------*/
+        /*-------------------------------------------------*/
+        /*-------------------------------------------------*/
+
+        
+        
+    }
+
+
+</style>
